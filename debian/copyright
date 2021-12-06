@@ -1,0 +1,11 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xproperty
+Source: https://github.com/jupyter-xeus/xproperty
+
+Files: *
+Copyright: 2016-2021 Johan Mabille and Sylvain Corlay
+License: BSD
+
+Files: debian/*
+Copyright: 2021 Dimitry Ishenko <dimitry.ishenko@gmail.com>
+License: GPL-3.0+

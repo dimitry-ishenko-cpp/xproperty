@@ -13,6 +13,8 @@ Rules-Requires-Root: no
 
 Package: xproperty-dev
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: nlohmann-json3-dev,
+ xtl-dev (>= 0.7.0),
+ ${shlibs:Depends}, ${misc:Depends}
 Description: C++ properties and observer pattern
  xproperty is a C++ library providing traitlets-style properties.

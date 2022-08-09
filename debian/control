@@ -1,20 +1,20 @@
 Source: xproperty
-Section: libs
+Section: devel
 Priority: optional
 Maintainer: Dimitry Ishenko <dimitry.ishenko@gmail.com>
-Build-Depends: cmake (>= 3.1),
- debhelper-compat (= 12),
+Build-Depends: debhelper-compat (= 13),
+ cmake,
  googletest <!nocheck>,
  nlohmann-json3-dev,
  xtl-dev (>= 0.7.0)
-Standards-Version: 4.5.1
+Standards-Version: 4.6.0
 Homepage: https://github.com/jupyter-xeus/xproperty
 Rules-Requires-Root: no
 
 Package: xproperty-dev
 Architecture: any
-Depends: nlohmann-json3-dev,
- xtl-dev (>= 0.7.0),
- ${misc:Depends}
+Depends: ${misc:Depends},
+ nlohmann-json3-dev,
+ xtl-dev (>= 0.7.0)
 Description: C++ properties and observer pattern
  xproperty is a C++ library providing traitlets-style properties.

@@ -1,13 +1,12 @@
 # Debian Packaging for xproperty
 
-This is Debian packaging for the
-[xproperty](https://github.com/jupyter-xeus/xproperty) repository.
+This is Debian packaging repository for
+[xproperty](https://github.com/jupyter-xeus/xproperty).
 
-xproperty along with other supporting packages can be conveniently installed
-from
+Precompiled Debian package for xproperty can be installed from
 [ppa:ppa-verse/xeus-cling](https://launchpad.net/~ppa-verse/+archive/ubuntu/xeus-cling).
 
-Building instructions:
+Or you can build it yourself:
 
 ```bash
 p=xproperty b=debian # or another branch
@@ -18,11 +17,13 @@ r=$(cd ${p} && git log -n1 --oneline --no-decorate `git describe --tags --abbrev
 v=${r%-*}
 v=${v#*:}
 
-# download upstream tarball
-wget https://github.com/jupyter-xeus/xproperty/archive/refs/tags/${v}.tar.gz \
-    -O ${p}_${v}.orig.tar.gz
+# download and unpack upstream tarball
+f=${p}_${v}.orig.tar.gz
+wget https://github.com/jupyter-xeus/xproperty/archive/refs/tags/${v}.tar.gz -O ${f}
 
-# build source package
+tar -C ${p} --strip-components=1 -xzf ${f}
+
+# create source package
 dpkg-source -b ${p}
 
 # build .deb package locally...

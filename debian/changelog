@@ -1,4 +1,4 @@
-xproperty (0.11.0-0ppa4) unstable; urgency=medium
+xproperty (0.11.0-0ppa4~ubuntu22.04) jammy; urgency=medium
 
   * Update README.md
   * rules: add variables

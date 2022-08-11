@@ -1,4 +1,4 @@
-xproperty (0.11.0-0ppa5) unstable; urgency=medium
+xproperty (0.11.0-0ppa5~ubuntu22.04) jammy; urgency=medium
 
   * Export DEB_CXXFLAGS_MAINT_APPEND
 

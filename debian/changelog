@@ -1,4 +1,11 @@
-xproperty (0.11.0-0ppa5~ubuntu22.04) jammy; urgency=medium
+xproperty (0.11.0-0ppa6) unstable; urgency=medium
+
+  * README.md: fix link
+  * Depend on nlohmann-json3-dev >= 3.11.2
+
+ -- Dimitry Ishenko <dimitry.ishenko@gmail.com>  Tue, 16 Aug 2022 11:34:21 -0400
+
+xproperty (0.11.0-0ppa5) unstable; urgency=medium
 
   * Export DEB_CXXFLAGS_MAINT_APPEND
 

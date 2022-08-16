@@ -6,7 +6,7 @@ Build-Depends: debhelper-compat (= 13),
  cmake,
  doxygen,
  googletest <!nocheck>,
- nlohmann-json3-dev,
+ nlohmann-json3-dev (>= 3.11.2),
  python3-breathe,
  python3-sphinx,
  python3-sphinx-rtd-theme,
@@ -18,7 +18,7 @@ Rules-Requires-Root: no
 Package: xproperty-dev
 Architecture: any
 Depends: ${misc:Depends},
- nlohmann-json3-dev,
+ nlohmann-json3-dev (>= 3.11.2),
  xtl-dev (>= 0.7.0)
 Description: C++ properties and observer pattern
  xproperty is a C++ library providing traitlets-style properties.
